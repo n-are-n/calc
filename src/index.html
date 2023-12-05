@@ -8,5 +8,29 @@
     <script src="assets/js/index.js"></script>
 </head>
 <body>
+    <main>
+        <form id="screen">
+            <input type="text" id="input" disabled/>
+            <br>
+            <output id="display">0</output>
+        </form>
+        <button type="button" id="clear" onclick="allClear()">AC</button>
+        <button type="button" id="zero" class="number" onclick="inputValue(0)">0</button>
+        <button type="button" id="one" class="number" onclick="inputValue(1)">1</button>
+        <button type="button" id="two" class="number" onclick="inputValue(2)">2</button>
+        <button type="button" id="three" class="number" onclick="inputValue(3)">3</button>
+        <button type="button" id="four" class="number" onclick="inputValue(4)">4</button>
+        <button type="button" id="five" class="number" onclick="inputValue(5)">5</button>
+        <button type="button" id="six" class="number" onclick="inputValue(6)">6</button>
+        <button type="button" id="seven" class="number" onclick="inputValue(7)">7</button>
+        <button type="button" id="eight" class="number" onclick="inputValue(8)">8</button>
+        <button type="button" id="nine" class="number" onclick="inputValue(9)">9</button>
+        <button type="button" id="decimal" onclick="inputValue('.')">.</button>
+        <button type="button" id="equals" onclick="inputValue('=')">=</button>
+        <button type="button" id="add" class="operator" onclick="inputValue('+')">+</button>
+        <button type="button" id="subtract" class="operator" onclick="inputValue('-')">-</button>
+        <button type="button" id="multiply" class="operator" onclick="inputValue('*')">*</button>
+        <button type="button" id="divide" class="operator" onclick="inputValue('/')">/</button>
+    </main>
 </body>
 </html>
